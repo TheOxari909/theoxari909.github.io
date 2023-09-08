@@ -3,11 +3,9 @@ import Image from 'next/image';
 const Introduction = () => {
   return (
     <div>
-      <Image
+      <img
         src="https://avatars.githubusercontent.com/u/73400682?v=4"
-        height="256"
-        width="256"
-        className="m-auto my-12 rounded-full"
+        className="m-auto my-12 w-64 rounded-full"
         alt="Profile picture"
       />
       <h1 className="m-4 text-5xl font-extrabold">Pyry Kaleva</h1>
