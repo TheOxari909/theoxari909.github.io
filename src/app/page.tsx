@@ -14,18 +14,22 @@ import { AppType } from './types';
 
 const appObjects: AppType[] = [
   {
-    name: 'name',
-    address: 'address',
+    name: 'todo',
+    address: '/todo',
   },
   {
-    name: 'name',
-    address: 'address',
+    name: 'todo',
+    address: '/todo',
+  },
+  {
+    name: 'todo',
+    address: '/todo',
   },
 ];
 
 export default function Home() {
   return (
-    <div className="flex max-h-screen flex-row p-6 lg:grid lg:grid-cols-3 lg:grid-rows-1 lg:gap-10">
+    <div className="max-h-screen p-6 lg:grid lg:grid-cols-3 lg:grid-rows-1 lg:gap-10">
       <div className=" w-full  text-center lg:order-2 lg:max-h-full lg:overflow-auto">
         <Introduction />
       </div>
