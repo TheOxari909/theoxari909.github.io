@@ -3,14 +3,20 @@ const MainInfo = () => {
     <div className="p-10 text-left">
       <h2 className="text-2xl font-bold">Projektit</h2>
       <div className="py-4">
-        <a href="" className="text-sky-800 no-underline hover:underline">
+        <a
+          href="https://github.com/TheOxari909/hooked_on_logs"
+          target="_blank"
+          className="text-sky-800 no-underline hover:underline">
           Hooked on logs
         </a>
         <p className="p-4">
           React ja node.js web sovellus kalastusreissujen saaliiden
           kirjaamiseen. CSS puolella käytössä TailwindCSS.
         </p>
-        <a href="" className="text-sky-800 no-underline hover:underline">
+        <a
+          href="https://github.com/TheOxari909/AdventOfCode"
+          target="_blank"
+          className="text-sky-800 no-underline hover:underline">
           Advent of Code
         </a>
         <p className="p-4">
