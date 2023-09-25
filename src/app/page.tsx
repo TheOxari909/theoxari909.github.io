@@ -17,14 +17,6 @@ const appObjects: AppType[] = [
     name: 'todo',
     address: '/todo',
   },
-  {
-    name: 'todo',
-    address: '/todo',
-  },
-  {
-    name: 'todo',
-    address: '/todo',
-  },
 ];
 
 export default function Home() {

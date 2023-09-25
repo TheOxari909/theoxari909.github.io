@@ -27,12 +27,12 @@ const Introduction = () => {
       <p className="rounded-t-xl bg-slate-200 p-5 text-justify text-lg font-medium lg:rounded-xl lg:p-10 lg:shadow-xl">
         Itse opiskellut front-end kehittäjä muutaman vuoden kokemuksella,
         erinäisten ja projektien kautta. Ohjelmointiura alkoi vuonna 2015 C# ja
-        peli kehityksen parissa. Vuodesta 2020 eteenpäin ahkerammin keskittynyt
+        pelinkehityksen parissa. Vuodesta 2020 eteenpäin ahkerammin keskittynyt
         pieniin terminaali sovelluksiin ja alkukantaisiin verkkosivuihin.
         <br />
         <br />
         Siitä eteenpäin lukenut aiheesta kirjoja, ja suorittanut muutamia
-        kursseja ohjelmointiin liittyen. Vuodesta 2022 eteenpäin opiskellut
+        ohjelmointi kursseja. Vuodesta 2022 eteenpäin opiskellut
         lähinnä modernia webkehitystä ja JavaScript frameworkejä.
       </p>
     </div>
