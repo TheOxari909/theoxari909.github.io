@@ -17,12 +17,12 @@ const Introduction = () => {
       </div>
       <div className="my-2 flex w-full items-center justify-center py-2">
         <a href="https://github.com/TheOxari909" className="mx-2">
-          <Image src="/github-mark.svg" width="28" height="28" alt="Github" />
+          <Image src="/github-mark.svg" width={28} height={28} alt="Github" />
         </a>
         <a
           href="https://www.linkedin.com/in/pyry-kaleva-620aa422a/"
           className="mx-2">
-          <Image src="/linkedin.svg" width="28" height="28" alt="Linkedin" />
+          <Image src="/linkedin.svg" width={28} height={28} alt="Linkedin" />
         </a>
       </div>
       <p className="rounded-t-xl bg-slate-200 p-5 text-justify text-lg font-medium lg:rounded-xl lg:p-10 lg:shadow-xl">

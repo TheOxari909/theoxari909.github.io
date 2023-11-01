@@ -23,7 +23,3 @@ export interface ProjectDataType {
   description: string;
   link: string;
 }
-
-export interface ArrayOfAppTypes {
-  arrayOfAppTypes: AppType[];
-}

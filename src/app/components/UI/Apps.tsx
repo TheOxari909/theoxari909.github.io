@@ -14,8 +14,8 @@ const App = ({ app }: { app: AppType }) => {
 const Apps = ({ apps }: { apps: AppType[] }) => {
   return (
     <ul className="my-5 grid grid-cols-3 justify-between gap-5 text-center">
-      {apps.map((e: any) => {
-        return <App app={e} key="name" />;
+      {apps.map((e: AppType) => {
+        return <App app={e} key={e.name} />;
       })}
     </ul>
   );

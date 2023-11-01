@@ -13,7 +13,7 @@ const Experience = ({ info }: { info: WorkDataType }) => {
       </span>
       <ul className="list-disc px-4 py-4">
         {info.info.map((e: string) => (
-          <li>{e}</li>
+          <li key={e}>{e}</li>
         ))}
       </ul>
     </div>
@@ -25,7 +25,8 @@ const WorkExperience = () => {
     <div>
       <h2 className="pt-8 text-2xl font-bold">Työkokemus</h2>
       {data.work_experience.map(e => (
-        <Experience info={e} />
+        // Chose start time because it's most likely to be unique
+        <Experience info={e} key={e.startTime} />
       ))}
     </div>
   );
