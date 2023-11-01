@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import data from '@/app/data/info.json';
 
 const Introduction = () => {
   return (
@@ -10,9 +11,9 @@ const Introduction = () => {
         className="m-auto my-12 w-64 rounded-full"
         alt="Profile picture"
       />
-      <h1 className="m-4 text-5xl font-extrabold">Pyry Kaleva</h1>
+      <h1 className="m-4 text-5xl font-extrabold">{data.generalInfo.name}</h1>
       <div className="m-2 text-xl font-semibold text-gray-500">
-        Front-end kehittäjä
+        {data.generalInfo.title}
       </div>
       <div className="my-2 flex w-full items-center justify-center py-2">
         <a href="https://github.com/TheOxari909" className="mx-2">
@@ -25,15 +26,10 @@ const Introduction = () => {
         </a>
       </div>
       <p className="rounded-t-xl bg-slate-200 p-5 text-justify text-lg font-medium lg:rounded-xl lg:p-10 lg:shadow-xl">
-        Itse opiskellut front-end kehittäjä muutaman vuoden kokemuksella,
-        erinäisten ja projektien kautta. Ohjelmointiura alkoi vuonna 2015 C# ja
-        pelinkehityksen parissa. Vuodesta 2020 eteenpäin ahkerammin keskittynyt
-        pieniin terminaali sovelluksiin ja alkukantaisiin verkkosivuihin.
+        {data.generalInfo.intro}
         <br />
         <br />
-        Siitä eteenpäin lukenut aiheesta kirjoja, ja suorittanut muutamia
-        ohjelmointi kursseja. Vuodesta 2022 eteenpäin opiskellut
-        lähinnä modernia webkehitystä ja JavaScript frameworkejä.
+        {data.generalInfo.intro2}
       </p>
     </div>
   );

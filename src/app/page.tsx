@@ -1,14 +1,13 @@
-import MainInfo from './components/MainInfo';
-import Introduction from './components/Introduction';
+import MainInfo from './components/UI/MainInfo';
+import Introduction from './components/UI/Introduction';
+import WeatherApp from './components/UI/WeatherApp';
+import Apps from './components/UI/Apps';
 
 import dynamic from 'next/dynamic';
 
-const DynamicClock = dynamic(() => import('./components/Clock'), {
+const DynamicClock = dynamic(() => import('./components/UI/Clock'), {
   ssr: false,
 });
-
-import WeatherApp from './components/WeatherApp';
-import Apps from './components/Apps';
 
 import { AppType } from './types';
 
