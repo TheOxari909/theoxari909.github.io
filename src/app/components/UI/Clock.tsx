@@ -28,7 +28,7 @@ const Clock = () => {
                 style={{ transform: `rotate(${secondDegrees}deg)` }}
             />
             <div
-                className="absolute left-[98px] top-[52px] mx-auto h-[45px] w-[5px] origin-bottom rounded-full bg-black"
+                className="absolute left-[98px] top-[54px] mx-auto h-[45px] w-[5px] origin-bottom rounded-full bg-black"
                 style={{ transform: `rotate(${hourDegrees}deg)` }}
             />
             <div
