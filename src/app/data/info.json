@@ -1,0 +1,67 @@
+{
+  "courses": [
+    {
+      "name": "Full Stack Open",
+      "info": [
+        "Helsingin yliopiston, noin kahden kuukauden mittainen kurssi jossa perehdytään nykyaikaiseen verkkosovelluskehitykseen",
+        "Moderniin verkkosovelluskehitykseen perehtynyt kurssi, jossa aiheina React, Node.js, MongoDB ja TypeScript",
+        "Lisämateriaalina SQL, konttiteknologia, CI/CD ja React Native"
+      ],
+      "link": "https://fullstackopen.com/"
+    },
+    {
+      "name": "CS50",
+      "info": [
+        "Harvardin järjestämä 12 viikon mittainen kurssi tietotekniikan perusteille",
+        "Vahva pohja tietotekniikan opiskelulle",
+        "Keskitytään C-kieleen, algoritmeihin ja muihin tietojenkäsittelyn perustaitoihin"
+      ]
+    }
+  ],
+  "work_experience": [
+    {
+      "place": "Runostoppi",
+      "job": "Karaokejuontaja/dj",
+      "location": "Turku",
+      "startTime": "08/2022",
+      "endTime": "Jatkuu",
+      "info": [
+        "Asiakaspalvelutaitojeni kehittäminen",
+        "Useiden laulajien järjestely, normaalina iltana 30-40 laulajaa",
+        "Karaoketekniikan käyttö ja ylläpito",
+        "Aktiivinen vuorovaikutus asiakkaiden kanssa, jotta heidän tarpeensa ja musiikkitoiveensa tulevat huomioiduksi",
+        "Monen eri asian tekeminen yhtä aikaa, esim. laulajien koordinointi ja priorisointi, taustamusiikin valinta tunnelman mukaan, paineen hallinta, nopea päätöksenteko"
+      ]
+    },
+    {
+      "place": "Kalaneuvos",
+      "job": "Tuotantotyöntekijä",
+      "location": "Sastamala",
+      "startTime": "12/2022",
+      "endTime": "03/2023",
+      "info": [
+        "Monilla osastoilla työskentely mukaan lukien kalan käsittely, leikkaus ja pakkaus",
+        "Ryhmässä työskentely ja työn tehokas jako muiden kanssa",
+        "Osallistuin puhdistus ja huoltotehtäviin tarpeen mukaan"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Hooked On Logs",
+      "description": "React ja node.js web sovellus kalastusreissujen saaliiden kirjaamiseen. CSS puolella käytössä TailwindCSS.",
+      "link": "https://github.com/TheOxari909/hooked_on_logs"
+    },
+    {
+      "name": "Advent of Code",
+      "description": "C/C++ kielillä rakennettu tapa kasata joka vuoden ratkaisut helposti yhteen paikkaan. Mahdollissus ajaa jokainen päivä erikseen CLI argumenteilla.",
+      "link": "https://github.com/TheOxari909/AdventOfCode"
+    }
+  ],
+  "generalInfo": {
+    "name": "Pyry Kaleva",
+    "title": "Front-end kehittäjä",
+    "intro": "Itse opiskellut front-end kehittäjä muutaman vuoden kokemuksella, erinäisten ja projektien kautta. Ohjelmointiura alkoi vuonna 2015 C# ja pelinkehityksen parissa. Vuodesta 2020 eteenpäin ahkerammin keskittynyt pieniin terminaali sovelluksiin ja alkukantaisiin verkkosivuihin.",
+    "intro2": "Siitä eteenpäin lukenut aiheesta kirjoja, ja suorittanut muutamia ohjelmointi kursseja. Vuodesta 2022 eteenpäin opiskellut lähinnä modernia webkehitystä ja JavaScript frameworkejä."
+  }
+}
