@@ -2,13 +2,13 @@ import MainInfo from '@/app/components/UI/MainInfo';
 import Introduction from '@/app/components/UI/Introduction';
 import WeatherApp from '@/app/components/UI/WeatherApp';
 import Apps from '@/app/components/UI/Apps';
+import { AppType } from './types';
 
 import dynamic from 'next/dynamic';
 
 const DynamicClock = dynamic(() => import('@/app/components/UI/Clock'), {
     ssr: false,
 });
-import { AppType } from './types';
 
 const appObjects: AppType[] = [
     {
@@ -19,7 +19,7 @@ const appObjects: AppType[] = [
 
 export default function Home() {
     return (
-        <div className="bg-[#4F6A87] p-6 lg:grid lg:max-h-screen lg:grid-cols-3 lg:grid-rows-1 lg:gap-10 lg:bg-[url('./img.jpg')] lg:bg-cover">
+        <div className="bg-[url('./img.jpg')] p-6 lg:grid lg:max-h-screen lg:grid-cols-3 lg:grid-rows-1 lg:gap-10 lg:bg-cover">
             <div className=" w-full text-center lg:order-2 lg:max-h-full lg:overflow-auto">
                 <Introduction />
             </div>
