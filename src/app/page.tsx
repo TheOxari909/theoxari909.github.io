@@ -19,7 +19,7 @@ const appObjects: AppType[] = [
 
 export default function Home() {
     return (
-        <div className="max-h-screen bg-[url('./img.jpg')] bg-cover p-6 lg:grid lg:grid-cols-3 lg:grid-rows-1 lg:gap-10">
+        <div className="bg-[#4F6A87] p-6 lg:grid lg:max-h-screen lg:grid-cols-3 lg:grid-rows-1 lg:gap-10 lg:bg-[url('./img.jpg')] lg:bg-cover">
             <div className=" w-full text-center lg:order-2 lg:max-h-full lg:overflow-auto">
                 <Introduction />
             </div>
