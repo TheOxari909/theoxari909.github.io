@@ -8,7 +8,6 @@ const WeatherApp = () => {
     const [weather, setWeather] = useState<weatherType>();
 
     useEffect(() => {
-        // needs to call function to get async/await axios
         const fetchWeather = async () => {
             await axios
                 .get('http://localhost:3001/weather')
@@ -19,10 +18,9 @@ const WeatherApp = () => {
                 .catch(e => console.log(e));
         };
 
+        // needs to call function to get async/await axios
         fetchWeather().catch(e => console.log(e));
     }, []);
-
-    console.log(weather);
 
     return weather ? (
         <div className="rounded-xl bg-slate-200 bg-opacity-40 p-10 text-justify text-lg font-medium shadow-xl">
