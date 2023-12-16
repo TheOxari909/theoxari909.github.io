@@ -3,7 +3,7 @@ import data from '@/app/data/info.json';
 
 const Course = ({ info }: { info: CourseDataType }) => {
     return (
-        <div>
+        <>
             <h3 className="pt-2 text-lg font-semibold text-gray-700">
                 {info.name}
             </h3>
@@ -23,18 +23,18 @@ const Course = ({ info }: { info: CourseDataType }) => {
                     <div></div>
                 )}
             </ul>
-        </div>
+        </>
     );
 };
 
 const Courses = () => {
     return (
-        <div>
+        <>
             <h2 className="pt-4 text-2xl font-bold">Kurssit</h2>
             {data.courses.map((e: CourseDataType) => {
                 return <Course info={e} key={e.name} />;
             })}
-        </div>
+        </>
     );
 };
 

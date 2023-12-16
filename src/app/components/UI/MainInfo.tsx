@@ -4,11 +4,11 @@ import Projects from '../MainInfo/Projects';
 
 const MainInfo = () => {
     return (
-        <div className="p-10 text-left">
+        <main className="p-10 text-left">
             <Projects />
             <Courses />
             <WorkExperience />
-        </div>
+        </main>
     );
 };
 

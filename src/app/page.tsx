@@ -19,18 +19,18 @@ const appObjects: AppType[] = [
 
 export default function Home() {
     return (
-        <div className="bg-[url('./img.jpg')] p-6 lg:grid lg:max-h-screen lg:grid-cols-3 lg:grid-rows-1 lg:gap-10 lg:bg-cover">
-            <div className=" w-full text-center lg:order-2 lg:max-h-full lg:overflow-auto">
+        <div className="bg-[url('./img.jpg')] bg-cover p-6 lg:grid lg:max-h-screen lg:grid-cols-3 lg:grid-rows-1 lg:gap-10">
+            <section className="w-full text-center lg:order-2 lg:max-h-full lg:overflow-auto">
                 <Introduction />
-            </div>
-            <div className="rounded-b-xl bg-slate-200 bg-opacity-40 font-medium lg:order-1 lg:max-h-full lg:overflow-auto lg:rounded-xl lg:shadow-xl">
+            </section>
+            <section className="rounded-b-xl bg-slate-200 bg-opacity-40 font-medium lg:order-1 lg:max-h-full lg:overflow-auto lg:rounded-xl lg:shadow-xl">
                 <MainInfo />
-            </div>
-            <div className="p-5 lg:order-3 lg:max-h-full lg:overflow-auto">
+            </section>
+            <section className="lg:order-3 lg:max-h-full lg:overflow-auto">
                 <DynamicClock />
                 <WeatherApp />
                 <Apps apps={appObjects} />
-            </div>
+            </section>
         </div>
     );
 }

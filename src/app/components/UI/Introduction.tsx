@@ -3,7 +3,7 @@ import data from '@/app/data/info.json';
 
 const Introduction = () => {
     return (
-        <div>
+        <section>
             <Image
                 src="https://avatars.githubusercontent.com/u/73400682?v=4"
                 width={128}
@@ -43,7 +43,7 @@ const Introduction = () => {
                 <br />
                 {data.generalInfo.intro2}
             </p>
-        </div>
+        </section>
     );
 };
 
