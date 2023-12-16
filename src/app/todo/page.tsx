@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 interface Item {
     id: number;
-    value: String;
+    value: string;
     done: boolean;
 }
 
@@ -12,7 +12,8 @@ const Todo = () => {
     const [value, setValue] = useState('');
     const [list, setList] = useState<Array<Item>>([]);
 
-    const handleChange = (e: any) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        console.log(typeof e);
         e.preventDefault;
         setValue(e.target.value);
     };
@@ -25,7 +26,7 @@ const Todo = () => {
             done: false,
         };
 
-        let tmp = [...list];
+        const tmp = [...list];
         tmp.unshift(new_value);
         console.log(list);
         setList(tmp);
@@ -33,7 +34,7 @@ const Todo = () => {
     };
 
     const removeItem = (id: number) => {
-        let tmp = [...list];
+        const tmp = [...list];
         const to_del = list.findIndex(e => e.id === id);
         if (to_del > -1) {
             tmp.splice(to_del, 1);
@@ -43,7 +44,7 @@ const Todo = () => {
 
     const moveItem = (id: number) => {
         if (list.length < 1) return;
-        let tmp = [...list];
+        const tmp = [...list];
         const to_move = list.findIndex(e => e.id === id);
         if (to_move === 0) return;
         [tmp[to_move], tmp[to_move - 1]] = [tmp[to_move - 1], tmp[to_move]];
@@ -51,7 +52,7 @@ const Todo = () => {
     };
 
     const updateShow = (id: number) => {
-        let tmp = [...list];
+        const tmp = [...list];
         const to_edit = list.findIndex(e => e.id === id);
         tmp[to_edit].done = !tmp[to_edit].done;
         setList(tmp);
