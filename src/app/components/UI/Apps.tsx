@@ -4,7 +4,7 @@ import Link from 'next/link';
 const App = ({ app }: { app: AppType }) => {
     return (
         <Link className="h-full w-full" href={app.address}>
-            <li className="rounded-xl bg-slate-200 bg-opacity-40 p-5 shadow-xl hover:bg-slate-300">
+            <li className="uppercase rounded-xl bg-blue-500 p-5 text-lg font-bold shadow-xl text-white hover:bg-blue-700 ">
                 {app.name}
             </li>
         </Link>

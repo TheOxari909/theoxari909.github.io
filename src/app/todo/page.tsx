@@ -79,10 +79,10 @@ const Todo = () => {
     };
 
     return (
-        <div className="mx-auto rounded-xl rounded-b-xl bg-slate-200 bg-opacity-40 p-5 shadow-xl lg:w-1/2 lg:overflow-auto">
+        <div className="mx-auto my-10 rounded-xl rounded-b-xl bg-slate-200 bg-opacity-40 p-5 shadow-xl lg:w-1/2 lg:overflow-auto">
             <div>
                 <input
-                    className="m-2 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2 text-lg text-gray-900 focus:border-blue-500 focus:ring-blue-500"
+                    className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2 text-lg text-gray-900 focus:border-blue-500 focus:ring-blue-500"
                     type="text"
                     onChange={handleChange}
                     value={value}></input>
@@ -127,6 +127,7 @@ const Todo = () => {
 export default function Page() {
     return (
         <div className="h-screen bg-[url('./img.jpg')] bg-cover p-6">
+            <a href="/" className="py-2 rounded bg-blue-500 px-4 text-lg font-bold text-white hover:bg-blue-700">Home</a>
             <Todo />
         </div>
     );
