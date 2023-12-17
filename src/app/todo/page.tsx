@@ -1,16 +1,22 @@
 'use client';
 
-import React, { useState } from 'react';
-
-interface Item {
-    id: number;
-    value: string;
-    done: boolean;
-}
+import React, { useState, useEffect } from 'react';
+import { ToDoItem } from '@/app/types';
 
 const Todo = () => {
     const [value, setValue] = useState('');
-    const [list, setList] = useState<Array<Item>>([]);
+    const [list, setList] = useState<Array<ToDoItem>>([]);
+
+    useEffect(() => {
+        if (!localStorage.list) return;
+        const storedNames = JSON.parse(localStorage.list);
+        setList(storedNames);
+    }, []);
+
+    const updateLocalStorage = (tmp: ToDoItem[]) => {
+        console.log(tmp);
+        localStorage.setItem('list', JSON.stringify(tmp));
+    };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         console.log(typeof e);
@@ -20,40 +26,54 @@ const Todo = () => {
 
     const addToDo = () => {
         if (value == '') return;
-        const new_value: Item = {
+        const new_value: ToDoItem = {
             id: Math.floor(Math.random() * 10000),
             value: value,
             done: false,
         };
 
         const tmp = [...list];
+
         tmp.unshift(new_value);
-        console.log(list);
+
         setList(tmp);
         setValue('');
+        updateLocalStorage(tmp);
     };
 
     const removeItem = (id: number) => {
         const tmp = [...list];
-        const to_del = list.findIndex(e => e.id === id);
+        const to_del = tmp.findIndex(e => e.id === id);
+
         if (to_del > -1) {
             tmp.splice(to_del, 1);
         }
+
         setList(tmp);
+        updateLocalStorage(tmp);
     };
 
     const moveItem = (id: number) => {
-        if (list.length < 1) return;
+        if (list.length < 1) {
+            return;
+        }
+
         const tmp = [...list];
-        const to_move = list.findIndex(e => e.id === id);
-        if (to_move === 0) return;
+        const to_move = tmp.findIndex(e => e.id === id);
+
+        if (to_move === 0) {
+            return;
+        }
+
         [tmp[to_move], tmp[to_move - 1]] = [tmp[to_move - 1], tmp[to_move]];
         setList(tmp);
+        updateLocalStorage(tmp);
     };
 
     const updateShow = (id: number) => {
         const tmp = [...list];
-        const to_edit = list.findIndex(e => e.id === id);
+        const to_edit = tmp.findIndex(e => e.id === id);
+
         tmp[to_edit].done = !tmp[to_edit].done;
         setList(tmp);
     };
@@ -69,7 +89,7 @@ const Todo = () => {
                 <button
                     className="m-2 rounded bg-blue-500 px-2 py-1 font-bold text-white hover:bg-blue-700"
                     onClick={() => addToDo()}>
-                    Add To Do
+                    Lisää
                 </button>
             </div>
             <ul>
@@ -89,7 +109,7 @@ const Todo = () => {
                             &nbsp;
                             <span
                                 className={`text-xl text-gray-900 ${
-                                    e.done ? 'line-through' : ''
+                                    e.done ? 'line-through decoration-4' : ''
                                 }`}
                                 onClick={() => updateShow(e.id)}>
                                 {e.value}
