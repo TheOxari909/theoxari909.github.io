@@ -3,6 +3,12 @@ export interface AppType {
     address: string;
 }
 
+export interface ToDoItem {
+    id: number;
+    value: string;
+    done: boolean;
+}
+
 export interface CourseDataType {
     name: string;
     info: string[];
