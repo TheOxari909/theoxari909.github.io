@@ -30,7 +30,7 @@ const WeatherApp = () => {
             weather description: {weather.weather[0]['description']}
         </div>
     ) : (
-        <div className="rounded-xl bg-slate-200 bg-opacity-40 p-10 text-justify text-lg font-medium shadow-xl">
+        <div className="rounded-xl bg-slate-200 bg-opacity-40 p-10 text-justify text-lg font-normal shadow-xl">
             Error connecting to service
         </div>
     );

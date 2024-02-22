@@ -30,7 +30,7 @@ const Course = ({ info }: { info: CourseDataType }) => {
 const Courses = () => {
     return (
         <>
-            <h2 className="pt-4 text-2xl font-bold">Kurssit</h2>
+            <h2 className="pt-4 text-2xl font-semibold">Kurssit</h2>
             {data.courses.map((e: CourseDataType) => {
                 return <Course info={e} key={e.name} />;
             })}

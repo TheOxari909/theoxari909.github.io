@@ -18,7 +18,7 @@ const Project = ({ info }: { info: ProjectDataType }) => {
 const Projects = () => {
     return (
         <section>
-            <h2 className="py-4 text-2xl font-bold">Projektit</h2>
+            <h2 className="py-4 text-2xl font-semibold">Projektit</h2>
             {data.projects.map(e => (
                 <Project info={e} key={e.name} />
             ))}

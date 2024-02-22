@@ -14,7 +14,7 @@ const Introduction = () => {
             <h1 className="m-4 text-5xl font-extrabold text-black">
                 {data.generalInfo.name}
             </h1>
-            <div className="m-2 text-xl font-semibold text-yellow-50">
+            <div className="m-2 text-xl font-semibold text-black">
                 {data.generalInfo.title}
             </div>
             <div className="my-2 flex w-full items-center justify-center py-2">
@@ -37,7 +37,7 @@ const Introduction = () => {
                     />
                 </a>
             </div>
-            <p className="rounded-t-xl bg-slate-200 bg-opacity-40 p-5 text-justify text-lg font-medium lg:rounded-xl lg:p-10 lg:shadow-xl">
+            <p className="rounded-t-xl bg-slate-200 bg-opacity-40 p-5 text-justify text-lg font-normal lg:rounded-xl lg:p-10 lg:shadow-xl">
                 {data.generalInfo.intro}
                 <br />
                 <br />
