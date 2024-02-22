@@ -23,11 +23,11 @@ const appObjects: AppType[] = [
 
 export default function Home() {
     return (
-        <div className="bg-cover text-sm bg-slate-300 p-6 lg:grid lg:max-h-screen lg:grid-cols-3 lg:grid-rows-1 lg:gap-10">
+        <div className="bg-cover text-sm bg-gradient-to-br from-slate-200 to-slate-400 p-6 lg:grid lg:max-h-screen lg:grid-cols-3 lg:grid-rows-1 lg:gap-10">
             <section className="w-full text-center lg:order-2 lg:max-h-full lg:overflow-auto">
                 <Introduction />
             </section>
-            <section className=" bg-slate-200 bg-opacity-40 font-normal lg:order-1 lg:max-h-full lg:overflow-auto  lg:shadow-xl">
+            <section className="bg-slate-200 bg-opacity-40 font-normal lg:order-1 lg:max-h-full lg:overflow-auto">
                 <MainInfo />
             </section>
             <section className="lg:order-3 lg:max-h-full lg:overflow-auto">

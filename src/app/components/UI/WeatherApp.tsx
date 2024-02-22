@@ -23,14 +23,14 @@ const WeatherApp = () => {
     }, []);
 
     return weather ? (
-        <div className="rounded-xl bg-slate-200 bg-opacity-40 p-10 text-justify text-lg font-medium shadow-xl">
+        <div className="bg-slate-200 bg-opacity-40 p-10 text-justify text-lg font-medium">
             temperature now: {weather.main['temp']} <br />
             feels like: {weather.main['feels_like']} <br />
             wind speed: {weather.wind['speed']} <br />
             weather description: {weather.weather[0]['description']}
         </div>
     ) : (
-        <div className="rounded-xl bg-slate-200 bg-opacity-40 p-10 text-justify text-lg font-normal shadow-xl">
+        <div className="bg-slate-200 bg-opacity-40 p-10 text-justify text-lg font-normal">
             Error connecting to service
         </div>
     );

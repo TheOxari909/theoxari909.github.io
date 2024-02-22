@@ -22,7 +22,7 @@ const Clock = () => {
     const hourDegrees = (((hours % 12) + minuteDegrees / 360) / 12) * 360;
 
     return (
-        <div className="relative z-30 mx-auto my-10 box-content flex h-48 w-48 items-center justify-center rounded-full border-4 border-black bg-yellow-50">
+        <div className="relative z-30 mx-auto my-10 box-content flex h-48 w-48 items-center justify-center rounded-full border-4 border-black bg-slate-50">
             <div
                 className="z-28 absolute left-[98px] top-[48px] mx-auto h-[50px] w-[3px] origin-bottom rounded-full bg-red-600"
                 style={{ transform: `rotate(${secondDegrees}deg)` }}
@@ -36,7 +36,7 @@ const Clock = () => {
                 style={{ transform: `rotate(${minuteDegrees}deg)` }}
             />
 
-            <div className="absolute left-4 top-4 -z-10 h-40 w-40 rounded-full bg-yellow-50" />
+            <div className="absolute left-4 top-4 -z-10 h-40 w-40 rounded-full bg-slate-50" />
 
             <div className="absolute left-2/4 -z-20 mx-auto h-48 w-1 origin-center bg-black" />
             <div className="absolute -z-20 mx-auto h-1 w-48 origin-center bg-black" />

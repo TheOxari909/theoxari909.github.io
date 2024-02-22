@@ -37,7 +37,7 @@ const Introduction = () => {
                     />
                 </a>
             </div>
-            <p className="rounded-t-xl bg-slate-200 bg-opacity-40 p-5 text-justify text-lg font-normal lg:rounded-xl lg:p-10 lg:shadow-xl">
+            <p className="bg-slate-200 bg-opacity-40 p-5 text-justify lg:text-lg font-normal lg:p-10">
                 {data.generalInfo.intro}
                 <br />
                 <br />
