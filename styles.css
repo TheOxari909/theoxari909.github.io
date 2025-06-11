@@ -98,16 +98,16 @@ ul.visible {
 /* Inline styles moved to CSS */
 .blue-bold {
   font-weight: bold;
-  color: #1f75fe;
+  color: #00d787;
 }
 
 .gray {
-  color: #6e6e6e;
+  color: #585858;
 }
 
 .teal-bold {
   font-weight: bold;
-  color: #4ca1af;
+  color: #87d7ff;
 }
 
 .lightblue-bold {
@@ -190,6 +190,17 @@ ul.visible {
 
 .name {
   display: none;
+}
+
+ul.dwm li.tag:first-of-type::before {
+  content: "";
+  position: absolute;
+  transform: translate(-120%, 0);
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 750px) {
