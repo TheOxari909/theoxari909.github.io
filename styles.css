@@ -6,32 +6,6 @@ body {
   padding: 0;
 }
 
-.header {
-  background: #161b22;
-  padding: 2rem;
-  text-align: center;
-}
-
-.header h1 {
-  margin: 0;
-  color: #58a6ff;
-  text-align: left;
-}
-
-.wm {
-  font-size: 1rem;
-  margin: auto;
-  max-width: 800px;
-}
-
-.terminal {
-  padding: 10px;
-  min-height: 12rem;
-  text-align: left;
-  background-color: #191724;
-  border: 1px solid #f6c177;
-}
-
 main {
   max-width: 800px;
   margin: 2rem auto;
@@ -74,27 +48,15 @@ ul {
 }
 
 ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-.header_list {
-  text-align: left;
-  font-weight: bold;
-  list-style: none;
-  color: #ffffff;
-}
-
 ul.dwm {
+  list-style: none;
   width: 100%;
   display: flex;
-}
-
-.tag:first-child {
-  background-color: #f6c177;
-  color: black;
 }
 
 .tag {
@@ -102,6 +64,18 @@ ul.dwm {
   text-align: center;
   padding: 2px 8px 2px 8px;
   text-decoration: none;
+}
+
+.tag:first-child {
+  background-color: #f6c177;
+  color: black;
+}
+
+.header_list {
+  text-align: left;
+  font-weight: bold;
+  list-style: none;
+  color: #ffffff;
 }
 
 .app {
@@ -167,6 +141,32 @@ ul.visible {
   width: 0.5rem;
 }
 
+.header {
+  background: #161b22;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  color: #58a6ff;
+  text-align: left;
+}
+
+.wm {
+  font-size: 1rem;
+  margin: auto;
+  max-width: 800px;
+}
+
+.terminal {
+  padding: 10px;
+  min-height: 12rem;
+  text-align: left;
+  background-color: #191724;
+  border: 1px solid #f6c177;
+}
+
 .ok::before {
   color: #7ec8e3;
   content: "[ OK ] ";
@@ -186,4 +186,17 @@ ul.visible {
 
 #who_is {
   white-space: pre;
+}
+
+.name {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .wm {
+    display: none;
+  }
+  .name {
+    display: inline;
+  }
 }

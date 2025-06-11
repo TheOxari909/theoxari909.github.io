@@ -66,9 +66,7 @@ function print_experience() {
   ];
 
   function call_print() {
-    print_lines(lines, true, function (element, index) {
-      console.log(element, index);
-    });
+    print_lines(lines, true, function (element, index) {});
   }
 
   setTimeout(call_print, 750);
@@ -82,8 +80,6 @@ function blink() {
   cursor.style.background = isOn ? back_color : white;
   isOn = !isOn;
 
-  console.log(isOn);
-
   setTimeout(blink, 750);
 }
 
@@ -95,9 +91,7 @@ function end_credits() {
 }
 
 function calltype() {
-  type(input, true, function (element, index) {
-    console.log(element, index);
-  });
+  type(input, true, function (element, index) {});
 }
 
 setTimeout(calltype, 1000);
