@@ -1,0 +1,189 @@
+body {
+  font-family: "Fira Code", monospace;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: #161b22;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  color: #58a6ff;
+  text-align: left;
+}
+
+.wm {
+  font-size: 1rem;
+  margin: auto;
+  max-width: 800px;
+}
+
+.terminal {
+  padding: 10px;
+  min-height: 12rem;
+  text-align: left;
+  background-color: #191724;
+  border: 1px solid #f6c177;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  color: #79c0ff;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 0.5rem;
+}
+
+a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #8b949e;
+}
+
+span {
+  display: table-cell;
+}
+
+h1,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.header_list {
+  text-align: left;
+  font-weight: bold;
+  list-style: none;
+  color: #ffffff;
+}
+
+ul.dwm {
+  width: 100%;
+  display: flex;
+}
+
+.tag:first-child {
+  background-color: #f6c177;
+  color: black;
+}
+
+.tag {
+  display: block;
+  text-align: center;
+  padding: 2px 8px 2px 8px;
+  text-decoration: none;
+}
+
+.app {
+  background-color: #f6c177;
+  padding: 2px 8px 2px 8px;
+  color: black;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.status {
+  margin-left: auto;
+  text-align: right;
+}
+
+ul.visible {
+  opacity: 1;
+}
+
+/* Inline styles moved to CSS */
+.blue-bold {
+  font-weight: bold;
+  color: #1f75fe;
+}
+
+.gray {
+  color: #6e6e6e;
+}
+
+.teal-bold {
+  font-weight: bold;
+  color: #4ca1af;
+}
+
+.lightblue-bold {
+  font-weight: bold;
+  color: #8faadb;
+}
+
+.blue {
+  color: #7ec8e3;
+}
+
+.white {
+  color: #ffffff;
+}
+
+#cursor {
+  background: white;
+  margin-left: 4px;
+  height: 1rem;
+  width: 0.5rem;
+}
+
+#visible {
+  opacity: 0;
+}
+
+#blink_cursor {
+  background: #191724;
+  margin-left: 4px;
+  height: 1rem;
+  width: 0.5rem;
+}
+
+.ok::before {
+  color: #7ec8e3;
+  content: "[ OK ] ";
+}
+.warn::before {
+  color: #f2ae49;
+  content: "[ WARN ] ";
+}
+.info::before {
+  color: #5cacee;
+  content: "[ INFO ] ";
+}
+.debug::before {
+  color: #8b8b8b;
+  content: "[ DEBUG ] ";
+}
+
+#who_is {
+  white-space: pre;
+}

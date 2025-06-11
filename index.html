@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pyry Kaleva | Linux-järjestelmäylläpitäjä</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="wm">
+        <ul class="dwm">
+          <li class="tag">1</li>
+          <li class="tag">2</li>
+          <li class="tag">3</li>
+          <li class="tag">[]=</li>
+          <li class="app">st</li>
+          <li class="status">
+            &nbsp;[ load: 1.72 ] [ temp: 38°C ] [ RAM: 2.7Gb/15.5Gb ]
+          </li>
+        </ul>
+
+        <div class="terminal" id="terminal">
+          <span class="blue-bold">pyrykaleva</span><span class="gray">@</span>
+          <span class="teal-bold">localhost</span><span class="gray"> [</span>
+          <span class="lightblue-bold">~</span>
+          <span class="gray">]</span><span class="blue">$&nbsp;</span>
+          <span class="white" id="command"></span>
+          <span id="cursor"></span>
+          <ul id="who_is"></ul>
+          <div id="visible">
+            <span class="blue-bold">pyrykaleva</span>
+            <span class="gray">@</span> <span class="teal-bold">localhost</span>
+            <span class="gray"> [</span>
+            <span class="lightblue-bold">~</span>
+            <span class="gray">]</span><span class="blue">$&nbsp;</span>
+            <span id="blink_cursor"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section>
+        <h2>Minusta</h2>
+        <p>
+          Helou! Olen intohimoinen Linux-järjestelmäylläpitäjä, jolla on
+          kokemusta palvelimien koventamisesta, palveluiden käyttöönotosta,
+          konttien hallinnasta ja skaalautuvan infrastruktuurin rakentamisesta.
+          Elän terminaalissa, automatisoin Bashilla ja valvon kaiken
+          Prometheuksella ja Grafanalla.
+        </p>
+      </section>
+
+      <section>
+        <h2>Työkalupakki</h2>
+        <ul>
+          <li>Linux (Debian, openSUSE, Arch)</li>
+          <li>SSH, YubiKey, UFW, Fail2Ban</li>
+          <li>Bash, Python, Git</li>
+          <li>Ansible, systemd, cron, rsync</li>
+          <li>Docker, Kubernetes, Podman</li>
+          <li>Prometheus, Grafana, Alertmanager</li>
+          <li>MariaDB, PostgreSQL, Redis</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Äitini blogi</h2>
+        <p>
+          Ylläpidän ja hostaan
+          <a href="https://blog.elehtimaki.com" target="_blank"
+            >äitini blogia</a
+          >
+          kevyt WordPress-asennus, missä taustalla toimii Apache ja HTTPS
+          totetutettu Let's Encrptillä. Se on yksi tärkeimmistä projekteistani>
+        </p>
+      </section>
+
+      <section>
+        <h2>Valvontaratkaisut</h2>
+        <p>
+          Olen rakentanut valvontapinon Prometheuksella metristen keräämiseen,
+          Alertmanagerilla hälytysten hallintaan ja Grafanalla näyttäviin
+          kojelautoihin. Katso
+          <a href="/grafana-demo" target="_blank">demokojelauta</a>
+          (anonymisoitu), joka näyttää järjestelmän käyttöajan, kuormitukset ja
+          nginx-statuksen!
+        </p>
+      </section>
+
+      <section>
+        <h2>Projektit</h2>
+        <ul>
+          <li>
+            <strong>infra-dotfiles:</strong> Julkiset dotfiles-tiedostoni
+            palvelimien hallintaan alusta alkaen.
+          </li>
+          <li><strong>uptime-guardian:</strong></li>
+          <li>
+            <strong>docker-warden:</strong> Kotilabran stack: Pi-hole ja paljon
+            muuta.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Ota yhteyttä</h2>
+        <p>
+          Haluatko tehdä yhteistyötä? Laita viestiä osoitteeseen
+          <a href="mailto:pyry.kaleva@gmail.com">pyry.kaleva@gmail.com</a> tai
+          kurkkaa <a href="https://github.com/theoxari909">GitHubini</a>.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>Tehty ♥:lla ja Vimillä. Hostattu itse VPS:llä.</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
