@@ -192,6 +192,14 @@ ul.visible {
   display: none;
 }
 
+.toolbox {
+  list-style: none;
+}
+
+ul.toolbox li::before {
+  content: "-> ";
+}
+
 ul.dwm li.tag:first-of-type::before {
   content: "";
   position: absolute;
